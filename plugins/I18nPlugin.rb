@@ -24,18 +24,24 @@ class I18nPlugin < Plugin
 
     # Emit the helper <script> – include this once (e.g., in footer)
     out['script'] = <<~HTML
-      <script>
-      (function(){
-        var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        var lang = pref.startsWith('es') ? 'es' : 'en';
-        // Optional: set <html lang=".."> so :lang CSS also works.
-        try { document.documentElement.setAttribute('lang', lang); } catch(e){}
-        document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
-          var text = el.dataset[lang] || el.dataset.en || '';
-          el.textContent = text;
-        });
-      })();
-      </script>
+        <script>
+        (function(){
+            var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+            var lang = pref.startsWith('es') ? 'es' : 'en';
+            console.log('Detected Language:', lang); // Log the detected language
+
+            // Optional: set <html lang=".."> so :lang CSS also works.
+            try { 
+            document.documentElement.setAttribute('lang', lang); 
+            } catch(e){}
+
+            document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
+            var text = el.dataset[lang] || el.dataset.en || '';
+            console.log('Setting text for', el.dataset.i18nKey, 'to', text); // Log each replacement
+            el.textContent = text;
+            });
+        })();
+        </script>
     HTML
 
     out
