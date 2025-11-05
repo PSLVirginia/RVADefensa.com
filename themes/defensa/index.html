@@ -19,8 +19,8 @@
   <meta property="og:title" content="{{ title }}" />
   <meta name="author" content="{{ name }}" />
   <meta property="og:locale" content="en" />
-  <meta name="description" content="{{ tagline }}" />
-  <meta property="og:description" content="{{ tagline }}" />
+  <meta name="description" content="{{ tagline | strip_html | escape }}" />
+  <meta property="og:description" content="{{ tagline | strip_html | escape }}" />
   <meta property="og:site_name" content="{{ title }}" />
   <meta property="og:image" content="{{ avatar }}" />
   <meta property="og:type" content="article" />
