@@ -33,7 +33,7 @@ plugins:
           es: "@richmonddefensa"
           zh: "@richmonddefensa"
         Tagline:
-          en: "Richmond Defensa is a community defense network "
+          en: "Richmond Defensa is a community defense network dedicated to protecting and upholding our immigrant brothers, sisters, and siblings in the Richmond, VA metro area "
           es: "Richmond Defensa es una red de defensa comunitaria"
           zh: "里士满防卫是一个社区防卫网络"
         Instagram:
@@ -63,11 +63,11 @@ title: "Richmond Defensa"
 avatar: "./images/RVADefensa.svg"
 
 # Name section text
-name: "@richmonddefensa"
+#name: "@richmonddefensa"
 
 # Tagline section text
 tagline: >-
-    Richmond Defensa is a community defense network dedicated to protecting and upholding our immigrant brothers, sisters, and siblings in the Richmond, VA metro area 
+    {{vars.I18n['Tagline']}} 
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
