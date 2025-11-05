@@ -52,6 +52,10 @@ plugins:
           en: "Sign The Artists Against Deportation Statement"
           es: "Firma La Declaración De Artistas Contra La Deportación"
           zh: "签署Artists Against Apartheid声明"
+        Report:
+          en: "Report Suspicious Activity"
+          es: "Denunciar Actividad Sospechosa"
+          zh: "举报可疑活动"
 
 # Google Analytics tracking id
 #google_analytics_id:
@@ -90,6 +94,13 @@ links:
       url: "https://t.me/rvadefensa"
       alt: "Telegram"
       title: "Telegram"
+      target: "_blank"
+  - link:
+      icon: "fa-solid fa-bullhorn"
+      text: "{{vars.I18n['Report']}}"
+      url: "https://RVADefensa.com/report"
+      alt: "Report"
+      title: "Report"
       target: "_blank"
   - link:
       icon: "fa-solid fa-palette"
