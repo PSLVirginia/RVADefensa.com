@@ -26,12 +26,9 @@ class I18nPlugin < Plugin
     out['script'] = <<~HTML
         <script>
         (function(){
-            console.log('navigator.language:', navigator.language); // Log the detected language
-            console.log('navigator.userLanguage:', navigator.userLanguage); // Log the detected language
             var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
             var lang = pref.startsWith('es') ? 'es' : 'en';
             document.documentElement.setAttribute('lang', lang); // overwrite every time
-            console.log('Detected Language:', lang); // Log the detected language
 
             // Replace text content based on detected language
             document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
