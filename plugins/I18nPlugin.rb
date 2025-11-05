@@ -3,46 +3,56 @@ require_relative 'Plugin'
 require 'cgi'
 
 class I18nPlugin < Plugin
-  attr_reader :translations
+  attr_reader :translations, :supported_langs
 
-  # data[0] is expected to be a hash like:
-  # { "Telegram" => {"en"=>"Receive Alerts on Telegram", "es"=>"Recibe Alertas en Telegram"}, ... }
+  # Expects a single hash argument:
+  # {
+  #   "supported_langs" => ["en", "es", "zh"],
+  #   "translations" => {
+  #       "Telegram" => {"en"=>"Receive Alerts on Telegram", "es"=>"Recibe Alertas en Telegram", "zh"=>"在 Telegram 接收提醒"},
+  #       "Newsletter" => {"en"=>"Join the Newsletter", "es"=>"Únete al boletín", "zh"=>"订阅新闻"}
+  #   }
+  # }
   def initialize(data)
-    @translations = data[0] || {}
+    config = data[0] || {}
+    @supported_langs = config["supported_langs"] || ["en", "es"]
+    @translations = config["translations"] || {}
   end
 
   def execute
     out = {}
 
-    # For each key, emit an HTML span with data attributes.
+    # For each translation key, emit a <span> with data attributes for each supported language
     translations.each do |key, langs|
-      en = (langs['en'] || key).to_s
-      es = (langs['es'] || en).to_s
+      attrs = supported_langs.map do |lc|
+        val = langs[lc] || langs['en'] || key
+        %Q(data-#{lc}="#{h(val)}")
+      end.join(' ')
+
       out["lang_#{key}"] =
-        %Q(<span class="i18n" data-i18n-key="#{h(key)}" data-en="#{h(en)}" data-es="#{h(es)}"></span>)
+        %Q(<span class="i18n" data-i18n-key="#{h(key)}" #{attrs}></span>)
     end
 
-    # Emit the helper <script> – include this once (e.g., in footer)
+    # Inject the JS helper once (you can include {{ vars.I18nPlugin['script'] }} in your footer)
     out['script'] = <<~HTML
-        <script>
-        (function(){
-            var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-            var lang = pref.startsWith('es') ? 'es' : 'en';
-            document.documentElement.setAttribute('lang', lang); // overwrite every time
+      <script>
+      (function(){
+        var supported = #{supported_langs.inspect};
+        var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        var lang = supported.find(l => pref.startsWith(l)) || 'en';
+        document.documentElement.setAttribute('lang', lang);
 
-            // Replace text content based on detected language
-            document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
-            var text = el.dataset[lang] || el.dataset.en || '';
-            console.log('Setting text for', el.dataset.i18nKey, 'to', text); // Log each replacement
-            el.textContent = text;
-            });
-        })();
-        </script>
+        document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
+          var text = el.dataset[lang] || el.dataset.en || '';
+          el.textContent = text;
+        });
+      })();
+      </script>
     HTML
 
     out
   end
 
   private
-  def h(s) = CGI.escapeHTML(s)
+  def h(s) = CGI.escapeHTML(s.to_s)
 end

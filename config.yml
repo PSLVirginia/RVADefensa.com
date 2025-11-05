@@ -22,9 +22,12 @@ theme: defensa
 #      - ZhgChgLi/linkyee
 plugins:
   - I18nPlugin:
-      Telegram:
-        en: "Receive Alerts on Telegram"
-        es: "Recibe Alertas en Telegram"
+      supported_langs: ["en", "es", "zh"]
+      translations:
+        Telegram:
+          en: "Receive Alerts on Telegram"
+          es: "Recibe Alertas en Telegram"
+          zh: "在 Telegram 接收提醒"
 
 # Google Analytics tracking id
 #google_analytics_id:
