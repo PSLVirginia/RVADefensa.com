@@ -116,7 +116,7 @@ a {
   cursor: pointer;
   transition: transform 0.2s;
   background: none;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .icon-button i {

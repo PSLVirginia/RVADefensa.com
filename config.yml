@@ -46,53 +46,25 @@ tagline: >-
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
   - link:
-      icon: "fa-brands fa-medium"
-      text: "Tech Blog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://blog.zhgchg.li"
-      alt: "ZhgChgLi's Tech Blog"
-      title: "ZhgChgLi's Tech Blog"
+      icon: "fa-brands fa-square-whatsapp"
+      text: "Receive Alerts on Whatsapp / Recibe Alertas en WhatsApp"
+      url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o"
+      alt: "Whatsapp"
+      title: "Whatsapp"
       target: "_blank"
   - link:
-      icon: "fa-brands fa-medium"
-      text: "Travelog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://medium.com/ztravel"
-      alt: "ZhgChgLi's Travelog"
-      title: "ZhgChgLi's Travelog"
+      icon: "fa-brands fa-telegram"
+      text: "Receive Alerts on Telegram / Recibe Alertas en Telegram"
+      url: "https://t.me/rvadefensa"
+      alt: "Telegram"
+      title: "Telegram"
       target: "_blank"
   - link:
-      icon: "fa-solid fa-rss"
-      text: "Website"
-      url: "https://zhgchg.li/"
-      alt: "ZhgChgLi's Website"
-      title: "ZhgChgLi's Website"
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-swift"
-      text: "ZMarkupParser <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMarkupParser']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMarkupParser"
-      alt: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      title: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-app-store-ios"
-      text: "ZReviewTender <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZReviewTender']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZReviewTender"
-      alt: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      title: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-markdown"
-      text: "ZMediumToMarkdown <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMediumToMarkdown']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMediumToMarkdown"
-      alt: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      title: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-github"
-      text: "linkyee <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/linkyee']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/linkyee"
-      alt: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
-      title: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
+      icon: "fa-solid fa-palette"
+      text: "Sign The Artists Against Deportation Statement / Firma La Declaración De Artistas Contra La Deportación"
+      url: "https://RVADefensa.com/RAAD"
+      alt: "RAAD Statement"
+      title: "RAAD Statement"
       target: "_blank"
 
 
@@ -108,6 +80,18 @@ socials:
       url: "https://www.instagram.com/richmonddefensa/"
       title: "Instagram"
       alt: "Richmond Defensa's Instagram"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-square-whatsapp"
+      url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o/"
+      title: "Whatsapp"
+      alt: "Receive Alerts on Whatsapp / Recibe Alertas en WhatsApp"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-telegram"
+      url: "https://t.me/rvadefensa/"
+      title: "Receive Alerts on Telegram / Recibe Alertas en Telegram"
+      alt: "Receive Alerts on Telegram / Recibe Alertas en Telegram"
       target: "_blank"
 
 # Footer text
