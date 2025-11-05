@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ title }}</title>
+  <title>{{ title | strip_html | escape }}</title>
 
   <meta charset="UTF-8">
   <meta name="last-modified" content="{{ last_modified_at }}">
@@ -22,10 +22,10 @@
   <meta name="description" content="{{ tagline | strip_html | escape }}" />
   <meta property="og:description" content="{{ tagline | strip_html | escape }}" />/>
   <meta property="og:site_name" content="{{ title | strip_html | escape }}" />
-  <meta property="og:image" content="{{ avatar }}" />
+  <meta property="og:image" content="{{ avatar | strip_html | escape }}" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:image" content="{{ avatar }}" />
+  <meta property="twitter:image" content="{{ avatar | strip_html | escape }}" />
   <meta property="twitter:title" content="{{ title | strip_html | escape }}" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
@@ -46,8 +46,8 @@
   <div class="container">
     <div class="profile">
       <img src="{{ avatar }}" alt="Profile Picture" class="profile-pic" />
-      <h1 class="name">{{ name }}</h1>
-      <p class="description">{{ tagline }}</p>
+      <h1 class="name">{{ name | strip_html | escape }}</h1>
+      <p class="description">{{ tagline | strip_html | escape }}</p>
     </div>
 
     <div class="links">
