@@ -11,7 +11,7 @@
 }
 
 :root { /* global scope */
-  --color-primary: #c40905;
+  --color-primary: rgb(196, 9, 5);
   --color-primary-alt: #6b1b00;
   --color-secondary: #f4d9b1;
   --color-black: #000000;
@@ -20,6 +20,9 @@
 
 body {
   background-color: var(--color-secondary);
+  background-image:
+    radial-gradient(circle, rgba(196, 9, 5, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
   color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -27,7 +30,7 @@ body {
   min-height: 100vh;
   cursor: default;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
 a {
@@ -123,7 +126,7 @@ a {
 
 .icon-button:hover {
   transform: scale(1.1);
-  color: var(--color-white);
+  color: var(--color-primary-alt);
 }
 
 .icon-button:active {
