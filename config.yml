@@ -60,7 +60,7 @@ plugins:
 title: "Richmond Defensa"
 
 # Avatar image path
-avatar: "./images/profile.jpeg"
+avatar: "./images/RVADefensa.svg"
 
 # Name section text
 name: "@richmonddefensa"
