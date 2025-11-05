@@ -1,8 +1,8 @@
-# plugins/I18nPlugin.rb
+# plugins/I18n.rb
 require_relative 'Plugin'
 require 'cgi'
 
-class I18nPlugin < Plugin
+class I18n < Plugin
   attr_reader :translations, :supported_langs
 
   # Expects a single hash argument:
@@ -29,11 +29,11 @@ class I18nPlugin < Plugin
         %Q(data-#{lc}="#{h(val)}")
       end.join(' ')
 
-      out["lang_#{key}"] =
+      out["#{key}"] =
         %Q(<span class="i18n" data-i18n-key="#{h(key)}" #{attrs}></span>)
     end
 
-    # Inject the JS helper once (you can include {{ vars.I18nPlugin['script'] }} in your footer)
+    # Inject the JS helper once (you can include {{ vars.I18n['script'] }} in your footer)
     out['script'] = <<~HTML
       <script>
       (function(){

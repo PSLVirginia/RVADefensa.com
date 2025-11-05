@@ -21,7 +21,7 @@ theme: defensa
 #      - ZhgChgLi/ZMediumToMarkdown
 #      - ZhgChgLi/linkyee
 plugins:
-  - I18nPlugin:
+  - I18n:
       supported_langs: ["en", "es", "zh"]
       translations:
         Telegram:
@@ -62,7 +62,7 @@ links:
       target: "_blank"
   - link:
       icon: "fa-brands fa-telegram"
-      text: "{{ vars.I18nPlugin['lang_Telegram'] }}"
+      text: "{{ vars.I18n['Telegram'] }}"
       url: "https://t.me/rvadefensa"
       alt: "Telegram"
       title: "Telegram"
@@ -107,7 +107,7 @@ socials:
 #    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
 
 footer: >
-  {{ vars.I18nPlugin['script'] }}
+  {{ vars.I18n['script'] }}
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
