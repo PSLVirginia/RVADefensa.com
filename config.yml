@@ -57,17 +57,17 @@ plugins:
 #google_analytics_id:
 
 # HTML Title
-title: "{{vars.I18n['Title']}}"
+title: "Richmond Defensa"
 
 # Avatar image path
 avatar: "./images/profile.jpeg"
 
 # Name section text
-name: "{{vars.I18n['Name']}}"
+name: "@richmonddefensa"
 
 # Tagline section text
 tagline: >-
-    {{vars.I18n['Tagline']}}
+    Richmond Defensa is a community defense network. 
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -111,19 +111,19 @@ socials:
       icon: "fa-brands fa-instagram"
       url: "https://www.instagram.com/richmonddefensa/"
       title: "Instagram"
-      alt: "{{vars.I18n['Instagram']}}"
+      alt: "Instagram"
       target: "_blank"
   - social:
       icon: "fa-brands fa-square-whatsapp"
       url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o/"
       title: "WhatsApp"
-      alt: "{{vars.I18n['WhatsApp']}}"
+      alt: "WhatsApp"
       target: "_blank"
   - social:
       icon: "fa-brands fa-telegram"
       url: "https://t.me/rvadefensa/"
       title: "Telegram"
-      alt: "{{vars.I18n['Telegram']}}"
+      alt: "Telegram"
       target: "_blank"
 
 # Footer text
