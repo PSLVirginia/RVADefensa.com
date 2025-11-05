@@ -67,7 +67,7 @@ avatar: "./images/RVADefensa.svg"
 
 # Tagline section text
 tagline: >-
-    {{vars.I18n['Tagline']}} 
+    "{{vars.I18n['Tagline']}}" 
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
