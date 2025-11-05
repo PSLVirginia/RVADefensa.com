@@ -4,7 +4,7 @@
 theme: defensa
 
 # HTML Language setting
-lang: "en"
+#lang: "en"
 
 # Plugins, implemented in ./plugins/PLUGIN_NAME
 # Use {{ vars.PLUGIN_NAME }} in the settings below
@@ -20,6 +20,11 @@ lang: "en"
 #      - ZhgChgLi/ZReviewTender
 #      - ZhgChgLi/ZMediumToMarkdown
 #      - ZhgChgLi/linkyee
+plugins:
+  - I18nPlugin:
+      Telegram:
+        en: "Receive Alerts on Telegram"
+        es: "Recibe Alertas en Telegram"
 
 # Google Analytics tracking id
 #google_analytics_id:
@@ -54,7 +59,7 @@ links:
       target: "_blank"
   - link:
       icon: "fa-brands fa-telegram"
-      text: "Receive Alerts on Telegram / Recibe Alertas en Telegram"
+      text: "{{ vars.I18nPlugin['lang_Telegram'] }}"
       url: "https://t.me/rvadefensa"
       alt: "Telegram"
       title: "Telegram"
@@ -97,6 +102,9 @@ socials:
 # Footer text
 #footer: >
 #    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
+
+footer: >
+  {{ vars.I18nPlugin['script'] }}
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
