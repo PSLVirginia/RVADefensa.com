@@ -42,12 +42,10 @@ a {
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 80%;
+  max-width: 240px;
+  object-fit: contain;
   margin-bottom: 15px;
-  border: 2px solid var(--color-primary);
 }
 
 .name {
