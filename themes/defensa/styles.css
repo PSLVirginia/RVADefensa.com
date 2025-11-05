@@ -38,12 +38,12 @@ a {
 
 .container {
   width: 90%;
-  max-width: 450px;
+  max-width: 512px;
 }
 
 .profile-pic {
   width: 80%;
-  max-width: 240px;
+  max-width: 360px;
   object-fit: contain;
   margin-bottom: 15px;
 }

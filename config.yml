@@ -126,14 +126,8 @@ socials:
       alt: "Telegram"
       target: "_blank"
 
-# Footer text
-#footer: >
-#    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
-
 footer: >
   {{ vars.I18n['script'] }}
 
-# Footer copyright message
-# Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
-  Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a> 🦋
