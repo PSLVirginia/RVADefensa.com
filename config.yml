@@ -82,6 +82,13 @@ tagline: >-
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
   - link:
+      icon: "fa-solid fa-bullhorn"
+      text: "<span class='link-button-text-bold'>{{vars.I18n['Report']}}</span>"
+      url: "https://RVADefensa.com/report"
+      alt: "Report"
+      title: "Report"
+      target: "_blank"
+  - link:
       icon: "fa-brands fa-square-whatsapp"
       text: "{{vars.I18n['WhatsApp']}}"
       url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o"
@@ -94,13 +101,6 @@ links:
       url: "https://t.me/rvadefensa"
       alt: "Telegram"
       title: "Telegram"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-bullhorn"
-      text: "{{vars.I18n['Report']}}"
-      url: "https://RVADefensa.com/report"
-      alt: "Report"
-      title: "Report"
       target: "_blank"
   - link:
       icon: "fa-solid fa-palette"
