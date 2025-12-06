@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richmond Defensa</title>
+
+  <meta charset="UTF-8">
+  <meta name="last-modified" content="2025-12-06T01:25:26+0000">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  >
+
+  <meta property="og:title" content="Richmond Defensa" />
+  <meta name="author" content="" />
+  <meta property="og:locale" content="en" />
+  <meta name="description" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Richmond Defensa" />
+  <meta property="og:image" content="./images/RVADefensa.svg" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image" content="./images/RVADefensa.svg" />
+  <meta property="twitter:title" content="Richmond Defensa" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Richmond Defensa">
+  <meta name="application-name" content="Richmond Defensa">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="./images/RVADefensa.svg" alt="Profile Picture" class="profile-pic" />
+      <h1 class="name"></h1>
+      <p class="description"><span class="i18n" data-i18n-key="Tagline" data-en="Richmond Defensa is a community defense network dedicated to protecting and upholding our immigrant brothers, sisters, and siblings in the Richmond, VA metro area" data-es="Richmond Defensa es una red de defensa comunitaria dedicada a proteger y apoyar a nuestros hermanos, hermanas y hermanes inmigrantes en el área metropolitana de Richmond, Virginia" data-zh="里士满地分撒是一个社区防卫网络，致力于保护并维护我们在里士满都会区的移民家人的权益"></span></p>
+    </div>
+
+    <div class="links">
+      
+        
+        <a href="https://RVADefensa.com/report" target="_blank" class="link-button" alt="Report" title="Report">
+          <i class="fa-solid fa-bullhorn"></i> <span class='link-button-text-bold'><span class="i18n" data-i18n-key="Report" data-en="Report Suspicious Activity" data-es="Denunciar Actividad Sospechosa" data-zh="举报可疑活动"></span></span>
+        </a>
+      
+        
+        <a href="https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o" target="_blank" class="link-button" alt="Whatsapp" title="Whatsapp">
+          <i class="fa-brands fa-square-whatsapp"></i> <span class="i18n" data-i18n-key="WhatsApp" data-en="Receive Alerts on WhatsApp" data-es="Recibe Alertas en WhatsApp" data-zh="在 WhatsApp 接收提醒"></span>
+        </a>
+      
+        
+        <a href="https://t.me/rvadefensa" target="_blank" class="link-button" alt="Telegram" title="Telegram">
+          <i class="fa-brands fa-telegram"></i> <span class="i18n" data-i18n-key="Telegram" data-en="Receive Alerts on Telegram" data-es="Recibe Alertas en Telegram" data-zh="在 Telegram 接收提醒"></span>
+        </a>
+      
+        
+        <a href="https://RVADefensa.com/RAAD" target="_blank" class="link-button" alt="RAAD Statement" title="RAAD Statement">
+          <i class="fa-solid fa-palette"></i> <span class="i18n" data-i18n-key="RAADPetition" data-en="Sign The Artists Against Deportation Statement" data-es="Firma La Declaración De Artistas Contra La Deportación" data-zh="签署Artists Against Apartheid声明"></span>
+        </a>
+      
+    </div>
+
+    <div class="button-container">
+      <div class="button-group">
+        
+          
+          <a href="https://www.instagram.com/richmonddefensa/" title="Instagram" target="_blank" class="icon-button" alt="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        
+          
+          <a href="https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o/" title="WhatsApp" target="_blank" class="icon-button" alt="WhatsApp">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+        
+          
+          <a href="https://t.me/rvadefensa/" title="Telegram" target="_blank" class="icon-button" alt="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    <footer class="footer">
+      <script>
+(function(){
+  var supported = ["en", "es", "zh"];
+  var pref = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  var lang = supported.find(l => pref.startsWith(l)) || 'en';
+  document.documentElement.setAttribute('lang', lang);
+
+  document.querySelectorAll('.i18n[data-i18n-key]').forEach(function(el){
+    var text = el.dataset[lang] || el.dataset.en || '';
+    el.textContent = text;
+  });
+})();
+</script>
+
+
+      <div class="copyright">Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a> 🦋
+</div>
+    </footer>
+  </div>
+  <script src="fontawesome/js/all.js" data-auto-replace-svg="nest"></script>
+  
+  <script src="./scripts.js"></script>
+</body>
+</html>
