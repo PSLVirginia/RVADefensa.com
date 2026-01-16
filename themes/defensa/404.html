@@ -8,11 +8,16 @@
     <script>
       // Map of short paths → destination URLs
       const redirects = {
-        "/art": "https://form.jotform.com/253204467490154"
+        "/print": "https://drive.google.com/drive/folders/1XeNE-BgE3Qkys_ukBwjTWm1GD6w23Hsg",
+        "/art": "https://form.jotform.com/253204467490154",
+        "/print": "https://drive.google.com/drive/folders/1XeNE-BgE3Qkys_ukBwjTWm1GD6w23Hsg",
+        "/whatsapp": "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o",
+        "/telegram": "https://t.me/rvadefensa",
+        "/raad": "https://t.me/rvadefensa"
       };
 
       // Normalize path (strip trailing slash)
-      const path = window.location.pathname.replace(/\/+$/, "") || "/";
+      const path = window.location.pathname.replace(/\/+$/, "").toLowerCase() || "/";
 
       if (redirects[path]) {
         window.location.replace(redirects[path]);

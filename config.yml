@@ -56,6 +56,10 @@ plugins:
           en: "Report Suspicious Activity"
           es: "Denunciar Actividad Sospechosa"
           zh: "举报可疑活动"
+        Printables:
+          en: "Download Community Defense Materials"
+          es: "Descargar Materiales De Defensa Comunitaria"
+          zh: "下载社区防御材料"
 
 # Google Analytics tracking id
 #google_analytics_id:
@@ -85,7 +89,7 @@ links:
       icon: "fa-solid fa-bullhorn"
       text: "<span class='link-button-text-bold'>{{vars.I18n['Report']}}</span>"
       url: "https://RVADefensa.com/report"
-      alt: "Report"
+      alt: "RVADefensa.com/report"
       title: "Report"
       target: "_blank"
   - link:
@@ -98,16 +102,23 @@ links:
   - link:
       icon: "fa-brands fa-telegram"
       text: "{{vars.I18n['Telegram']}}"
-      url: "https://t.me/rvadefensa"
-      alt: "Telegram"
+      url: "https://RVADefensa.com/telegram"
+      alt: "RVADefensa.com/telegram"
       title: "Telegram"
       target: "_blank"
   - link:
       icon: "fa-solid fa-palette"
       text: "{{vars.I18n['RAADPetition']}}"
       url: "https://RVADefensa.com/RAAD"
-      alt: "RAAD Statement"
-      title: "RAAD Statement"
+      alt: "RVADefensa.com/RAAD"
+      title: "Artists Against Deportation Petition"
+      target: "_blank"
+  - link:
+      icon: "fa-solid fa-file-arrow-down"
+      text: "{{vars.I18n['Printables']}}"
+      url: "https://RVADefensa.com/print"
+      alt: "RVADefensa.com/print"
+      title: "Print"
       target: "_blank"
 
 
