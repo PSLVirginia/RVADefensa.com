@@ -95,14 +95,14 @@ links:
   - link:
       icon: "fa-brands fa-square-whatsapp"
       text: "{{vars.I18n['WhatsApp']}}"
-      url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o"
+      url: "/whatsapp"
       alt: "Whatsapp"
       title: "Whatsapp"
       target: "_blank"
   - link:
       icon: "fa-brands fa-telegram"
       text: "{{vars.I18n['Telegram']}}"
-      url: "https://RVADefensa.com/telegram"
+      url: "/telegram"
       alt: "RVADefensa.com/telegram"
       title: "Telegram"
       target: "_blank"
@@ -137,13 +137,13 @@ socials:
       target: "_blank"
   - social:
       icon: "fa-brands fa-square-whatsapp"
-      url: "https://chat.whatsapp.com/J2JcvDaEDJ22ixOQOjUN3o/"
+      url: "/whatsapp"
       title: "WhatsApp"
       alt: "WhatsApp"
       target: "_blank"
   - social:
       icon: "fa-brands fa-telegram"
-      url: "https://t.me/rvadefensa/"
+      url: "/telegram"
       title: "Telegram"
       alt: "Telegram"
       target: "_blank"
