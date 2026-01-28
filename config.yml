@@ -57,9 +57,9 @@ plugins:
           es: "Denunciar Actividad Sospechosa"
           zh: "举报可疑活动"
         Printables:
-          en: "Download Community Defense Materials"
+          en: "Download Community Defense Toolkit"
           es: "Descargar Materiales De Defensa Comunitaria"
-          zh: "下载社区防御材料"
+          zh: "下载社区防御工具包"
 
 # Google Analytics tracking id
 #google_analytics_id:
